@@ -50,7 +50,7 @@ class _InstaCloneHomeState extends State<InstaCloneHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: index == 0 ? AppBar(
         title: Text(
           'Instagram',
           style: GoogleFonts.lobsterTwo(color: Colors.black, fontSize: 32),
@@ -68,7 +68,7 @@ class _InstaCloneHomeState extends State<InstaCloneHome> {
               },
               icon: const Icon(CupertinoIcons.paperplane, size: 32)),
         ],
-      ),
+      ) : null,
       body: InstaBody(index : index),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
