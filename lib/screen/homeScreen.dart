@@ -24,8 +24,8 @@ class StoryArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
        scrollDirection: Axis.horizontal,
-      child: Row( 
-        children: List.generate(20, (index) => UserStory(userName: "park $index"))
+      child: Row(
+        children: List.generate(5, (index) => UserStory(userName: "park $index"))
       ),
     );
   }
